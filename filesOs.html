@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Arquivos da O.S.</title>		
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	</head>
+	<body>		
+		<label for="nome_pasta">Insira o nome da PASTA:</label>
+		<input type="text" id="nome_pasta" name="nome_pasta">
+		<button id="search" onclick="load()">Pesquisar Pasta</button>
+
+        <div class="list-group"  id="listagem_arquivos" >
+            <a href="#" class="list-group-item list-group-item-action active">
+              Cras justo odio
+            </a>
+            <a href="http://10.51.18.199/knowloand_v2/uploads//1926/assinatura Sidney 2.jpg" class="list-group-item list-group-item-action">assinatura Sidney 2.jpg</a>
+            <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+            <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+            <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+        </div>
+		
+	<!--
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+        <script>
+            $('#listagem_arquivos a').click(function() {
+                $(this).attr('target', '_blank');
+            });
+        </script>
+		<script src="script.js"></script>
+	</body>
+</html>
